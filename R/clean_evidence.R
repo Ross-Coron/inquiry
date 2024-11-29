@@ -30,4 +30,3 @@ clean_evidence <- function(evidence_text){
   
   return (evidence_text)
 }
-

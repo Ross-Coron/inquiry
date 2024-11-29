@@ -1,0 +1,55 @@
+---
+title: "InquiRy"
+author: "Ross Coron"
+output:
+  html_document:
+    df_print: paged
+---
+
+<br>
+
+#### Get unique inquiry ID from landing page URL
+
+```{r}
+
+library(stringr)
+url <- "https://committees.parliament.uk/work/5802/life-sciences-and-the-industrial-strategy/publications/"
+inquiry_id <- str_extract(url, "\\d+")
+
+inquiry_id
+
+```
+
+<br>
+
+#### Example inquiry numbers to test
+
+|Number|Name|House|
+|------|----|-----|
+|1813|Industrial Strategy Inquiry|Commons|
+|5802|Life Sciences and the Industrial Strategy|Lords|
+|8388|Skills for the Future: Apprenticeships and Training|Lords|
+
+<br>
+
+#### Main.R
+
+1. Gets inquiry ID from user (passed as argument to function)
+2. Get document numbers for inquiry
+3. For each document, get author names and text (decoding from Base 64 to HTML to raw text)
+4. If `clean` argument provided, remove header line from text
+    + Example of line removed: "Written evidence from Chartered Institute of Housing (SFF0033)"
+    + Regex pattern currently using: `^.*?\\(.*?\\d+\\)`
+    + Exports removed text to a `.txt` file
+5. Combine document ids, authors, and text into a dataframe and export as a `.csv` file
+
+<br>
+
+#### Links
+
+* [Parliament's Select Committee API](https://committees-api.parliament.uk/index.html)
+* [Get list of documents for an inquiry](https://committees-api.parliament.uk/api/WrittenEvidence?CommitteeBusinessId={inquiry_id}&Take256)
+* [Get list of authors](https://committees-api.parliament.uk/api/WrittenEvidence?CommitteeBusinessId={inquiry_id}&Take=256)
+* [Get document text per document](https://committees-api.parliament.uk/api/WrittenEvidence/{document_id}/Document/Html)
+
+<br>
