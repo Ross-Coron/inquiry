@@ -7,7 +7,7 @@ get_submitters <- function(inquiry_id) {
   jsonData <- fromJSON(url)
   jsonData <- jsonData$items |> select(witnesses)
   
-  # For each item, get author's name. If two authors, combine
+  # For each item, get author's name. If no author listed, write NA; if >1 author, combine
   organisations <- c()
   for (i in 1:nrow(jsonData)) {
     if (length(jsonData$witnesses[[i]]$organisations) == 0) {

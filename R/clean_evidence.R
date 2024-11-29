@@ -1,7 +1,7 @@
 clean_evidence <- function(evidence_text){
   
   # Define REGEX expression (most often redundant line at start of evidence)
-  regex_string <- "^ISG.*\\(ISG\\s?\\d+\\)"
+  regex_string <- "^.*?\\(.*?\\d+\\)"
   
   if (!any(grepl(regex_string, evidence_text$extracted_text))) {
     warning("Evidence text NOT cleaned (regex pattern not found).")
