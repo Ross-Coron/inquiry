@@ -11,10 +11,12 @@
 \value{Returns dataframe with 2 columns: unique document ID and corresponding raw text.}
 
 \arguments{
-\item{v}{Vector of document IDs for a given Select Committee inquiry}
+\item{v}{Vector of document IDs for a Select Committee inquiry}
 }
 
-\details{Typically called by inquiry's main function, \code{\link{written_submissions}}. For each document, extracts a unique ID value and raw text. Data can be cleaned by inquiry's \code{\link{clean_evidence}} function. Function utilises \link[https://committees-api.parliament.uk/index.html]{Parliament's Select Committee API}. Function reads JSON, decodes base-64 data, and extracts text via the base \code{\link{rawToChar}} function.}
+\details{Typically called by inquiRy's main function, \code{\link{written_submissions}}. 
+
+For each document, extracts a unique ID value and raw text. Text can be further cleaned by inquiRy's \code{\link{clean_evidence}} function. Function utilises \link[https://committees-api.parliament.uk/index.html]{Parliament's Select Committee API}. Function reads JSON, decodes base-64 data, and extracts text via the base \code{\link{rawToChar}} function.}
 
 \examples{
   get_documents(document_ids)

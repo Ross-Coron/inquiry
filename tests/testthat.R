@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(speakr)
+library(inquiry)
 
-test_check("speakr")
+test_check("inquiry")

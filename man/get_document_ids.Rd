@@ -4,14 +4,14 @@
 
 \title{Get Document IDs}
 
-\description{Gets list of IDs corresponding to evidence submitted to a UK Parliament Select Committee inquiry. Called by inquiRy's main function, `get_evidence`.}
+\description{Gets list of IDs corresponding to written evidence submitted to a UK Parliament Select Committee inquiry. Called by inquiRy's main function, \code{\link{written_submissions}}.}
 
 \usage{get_document_ids(n)}
 
 \value{Returns list of unique document IDs.}
 
 \arguments{
-\item{n}{Integer corresponding to a Select Committee inquiry ID}
+\item{n}{Integer corresponding to a Select Committee inquiry's unique ID}
 }
 
 \examples{

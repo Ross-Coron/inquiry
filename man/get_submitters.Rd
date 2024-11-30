@@ -4,7 +4,7 @@
 
 \title{Get Submitters}
 
-\description{Gets list of authors that submitted written evidence to a UK Parliament Select Committee inquiry. Called by inquiRy's main function, `get_evidence`.}
+\description{Gets list of authors that submitted written evidence to a UK Parliament Select Committee inquiry. Called by inquiRy's main function, \code{\link{written_submissions}}.}
 
 \usage{get_submitters(n)}
 

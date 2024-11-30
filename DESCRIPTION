@@ -1,6 +1,7 @@
 Package: inquiry
 Title: Get Witten Evidence from UK Select Committee Inquiries
 Description: Get written evidence from UK Parliament Select Committee inquiries. Provide an inquiry's unique ID, get a CSV file of authors and their submitted evidence.
+Video: https://youtu.be/ps1U9mXVjVA?si=fvre5MQXp6OQzDQ6
 Version: 1.0
 Authors@R: person("Ross", "Coron", email = "rpcoron@gmail.com", role =  c("aut", "cre", "cph"))
 License: MIT + file LICENSE
