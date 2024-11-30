@@ -2,9 +2,9 @@
 
 \alias{inquiry}
 
-\title{InquiRy}
+\title{inquiRy}
 
-\description{Gets written evidence from \href{https://committees.parliament.uk/work/1813/industrial-strategy-inquiry/}{UK Parliament Select Committee inquiries}.}
+\description{Gets written evidence from UK Parliament \href{https://committees.parliament.uk/work/1813/industrial-strategy-inquiry/}{Select Committee inquiries}.}
 
 \usage{inquiry(n, clean = TRUE)}
 
