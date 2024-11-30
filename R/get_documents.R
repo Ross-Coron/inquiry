@@ -1,7 +1,7 @@
-# Takes vector of documents, returns document data as data frame
+# Takes vector of document IDs, returns document data as dataframe
 get_documents <- function(document_list) {
   
-  # Initialize an empty data frame for results
+  # Initialize an empty dataframe for results
   results <- data.frame(evidence_id = character(), extracted_text = character(), stringsAsFactors = FALSE)
   
   # Iterate over the document list

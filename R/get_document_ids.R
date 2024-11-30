@@ -1,4 +1,4 @@
-# Takes inquiry ID (`committee_business_id`), returns list of unique document IDs
+# Takes inquiry ID (`committee_business_id`), returns vector of unique document IDs
 get_document_ids <- function(inquiry_id) {
   
   # Build URL
@@ -15,5 +15,4 @@ get_document_ids <- function(inquiry_id) {
   json_content <- content(response, as = "text", encoding = "UTF-8")
   parsed_data <- fromJSON(json_content)
   document_ids <- parsed_data$items[9]
-  
 }

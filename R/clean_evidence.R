@@ -1,6 +1,7 @@
+# Clean redundant line from start of evidence text based on REGEX pattern
 clean_evidence <- function(evidence_text){
   
-  # Define REGEX expression (most often redundant line at start of evidence)
+  # Define REGEX expression
   regex_string <- "^.*?\\(.*?\\d+\\)"
   
   if (!any(grepl(regex_string, evidence_text$extracted_text))) {
@@ -23,7 +24,7 @@ clean_evidence <- function(evidence_text){
     removed_text <- c(removed_text, match)
   }
   writeLines(removed_text, "removed_text.txt")
-  print("Evidence cleaned. Removed text saved as removed_text.txt")
+  message("Evidence cleaned. Removed text saved as removed_text.txt")
   
   # Remove identified REGEX text from data frame
   evidence_text$extracted_text <- gsub(regex_string, "", evidence_text$extracted_text)
