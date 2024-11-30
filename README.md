@@ -6,6 +6,8 @@
 
 inquiRy is an R package to extract written evidence from [UK Parliament Select Committee inquiries](https://www.parliament.uk/about/how/committees/select/). 
 
+*TODO: Link to YouTube walkthrough*
+
 ## Guide
 
 1. Load `main.R` into RStudio
@@ -39,7 +41,11 @@ inquiRy uses Parliament's [Select Committee API](https://committees-api.parliame
 
 ## Select Committees?
 
-*TODO*
+In the UK, [Parliamentary Select Committees](https://www.instituteforgovernment.org.uk/explainer/select-committees) are cross-party groups of MPs and Lords which investigate specific issues and scrutinise the work of Government.
+
+Select Committees perform inquiries, gathering written evidence from organisations and members of the public, and oral evidence sessions. Select Committees [write reports](https://committees.parliament.uk/publications/42335/documents/210453/default/) with recommendations which the Government [responds to](https://committees.parliament.uk/publications/43083/documents/214368/default/). 
+
+Select Committees perform their work openly. Reports and their underlying evidence are published freely on [Parliament's website](https://www.parliament.uk/).
 
 ## About Me
 
