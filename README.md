@@ -30,12 +30,14 @@ inquiRy is a package written in R. inquiRy contains six functions:
 6. `clean_evidence`
 
 inquiRy requires six external packages:
-1. glue
-2. httr
-3. xml2
-4. jsonlite
-5. base64enc
-6. dplyr
+1. `glue`
+2. `httr`
+3. `xml2`
+4. `jsonlite`
+5. `base64enc`
+6. `dplyr`
+
+The package comes with test files (`test-that`) as well as `man` file documentation.
 
 inquiRy uses Parliament's [Select Committee API](https://committees-api.parliament.uk/index.html). Functions generally retrieve data as JSON via `GET` requests.
 
