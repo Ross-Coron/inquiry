@@ -1,10 +1,6 @@
 # inquiRy
 
-*Work in progress. Implementing as part of [CS50's Programming with R](https://cs50.harvard.edu/r/2024/).*
-
-## Summary
-
-inquiRy is an R package to extract written evidence from [UK Parliament Select Committee inquiries](https://www.parliament.uk/about/how/committees/select/). 
+inquiRy is an R package to extract written evidence from [UK Parliament Select Committee inquiries](https://www.parliament.uk/about/how/committees/select/). inquiRy was written as my final project for [CS50's Programming with R](https://cs50.harvard.edu/r/2024/). Watch a video walkthrough of inquiRy below!
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/BC2qRJJzJlY/0.jpg)](http://www.youtube.com/watch?v=BC2qRJJzJlY&ab_channel=RossCoron "inquiRy")
 
