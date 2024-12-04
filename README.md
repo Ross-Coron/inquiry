@@ -6,7 +6,7 @@
 
 inquiRy is an R package to extract written evidence from [UK Parliament Select Committee inquiries](https://www.parliament.uk/about/how/committees/select/). 
 
-*TODO: Link to YouTube walkthrough*
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/BC2qRJJzJlY&ab_channel=RossCoron/0.jpg)](http://www.youtube.com/watch?v=BC2qRJJzJlY&ab_channel=RossCoron "inquiRy")
 
 ## Guide
 
